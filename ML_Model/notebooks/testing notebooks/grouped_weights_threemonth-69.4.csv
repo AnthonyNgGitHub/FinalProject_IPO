@@ -1,0 +1,12 @@
+feature,weight,std
+net_profit_margin,0.04722,0.02860
+sector,0.04167,0.03101
+OCF_ratio,0.03889,0.02222
+gross_profit_margin,0.03611,0.01884
+industry,0.03056,0.04031
+debt_equity_ratio,0.01944,0.00680
+ebitda,0.01944,0.00680
+debt_asset_ratio,0.01944,0.01111
+research_dev,0.01389,0.02635
+cashflow_frominvestment,0.01111,0.03557
+current_ratio,-0.01111,0.04157

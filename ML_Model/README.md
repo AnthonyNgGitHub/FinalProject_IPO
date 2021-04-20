@@ -64,9 +64,9 @@ While the above shows all of the features selected, our two models had their own
 
 With the primary difference of EBIT margin being used in our First Day Return model, while EBITDA and Research & Development proved more beneficial to the Three Month Return model
 
-## Feature Importance
+## Features with Biggest Impact - Permutation Importance
 
-To find which features were most impactful on our models, we implemented Permuation Importance on our features used - which displays features and their weights on our models.
+To find which features were most impactful on our models, we implemented **Permuation Importance** on our features used - which displays features and their weights on our models.
 
 ### Feature Importance on Three Month Return:
 <img src="images/feature_weight_three_mth.png"></img>
@@ -148,7 +148,7 @@ Doing this resulted in our 65% and 60% accuracy on our Three Month Return and Fi
 
 ## Features Adjusted
 
-### <u>First Day Return - Accuracy Increased to 65% </u>
+### <u>**First Day Return** - Accuracy Increased to 65% </u>
 
 More attempts at increasing the accuracy of our model came about adding new features and adjusting features chosen. 
 
@@ -167,7 +167,7 @@ While trying to avoid over-fitting by lowering neurons, epochs and removing a la
 ### First Day Return - New Features and Added Hidden Layer:
 <img src="images/first_day_model_65.png"></img>
 
-### <u>Three Month Return - Accuracy Increased to 69%</u>
+### <u>**Three Month Return** - Accuracy Increased to 69%</u>
 
 In attempts to increase our Three Month Return Model, similar steps were taken, but ultimately adjusting features proved most beneficial - resulting in an accuracy of ~69%
 
@@ -178,8 +178,58 @@ Features Added:
 - Operating Cash Flow Ratio
 - Debt-to-Equity Ratio
 
-### <u>Three Month Return - New Features added</u>
+### Three Month Return - After new Features added:
 <img src="images/three_mth_model_69.png"></img>
+
+### <u>**Three Month Return** - Accuracy Increased to 71% </u>
+
+The R&D feature was adjusted to an R&D ratio, which is the amount of R&D invested as a percentage of total revenue. This metric allows for the dollar amount of R&D more comparability between companies, which may have been the reason for a slightly better accuracy.
+
+### Three Month Return - Replacing R&D with R&D Ratio:
+<img src="images/three_mth_model_71.png"></img>
+
+## <u>Confusion Matrix</u>
+
+To best describe the performance of our model, a confusion matrix is a good visualization of how precise and sensitive our model really is. 
+
+Our **Confusion Matrix** is setup to show the outcomes of our binary classification of either Gain or Loss when it comes to returns on either the First Day or Three Month after an IPO has released.
+
+The matrix compares actual outcomes and compares them to what the model predicted as either Gain or Loss. Looking at this comparison will result in determining how well our model can predict correctly, and how often.
+
+First Day Return
+
+<img src="images/first_day_cm.png"></img>
+
+Looking at First Day Return, of the 58 times that the model predicted a Gain:
+- 41 times it was actually a Gain
+- 17 times it was actually a Loss
+
+And when it came to predicting a loss:
+- 4 times it was actually  a Loss
+- 10 times it was actually a Gain
+
+Three Month Return
+
+<img src="images/three_mth_cm.png"></img>
+
+For our Three Month Return 
+
+When guessing a Gain:
+- 27 it was actually a Gain
+- 17 it was actually a Loss
+
+When guessing a Loss:
+- 16 it was actually a Loss
+- 12 it was actually a Gain
+
+So to use this information, to see how often we are correct is to determine the model's precision, and to see how often the model predicts a gain and its actually a gain is to determine its sensitivity/recall.
+
+### Precision and Recall
+<img src="images/confusion_matrix_summary.png"></img>
+
+For our first day model, its precision to predict a Gain is 71% whereas our Three Month has a precision of only 61%. So our first day is better at predicting a True Gain in IPO return but not when it comes to predicting a True Loss
+
+WHen it comes to how often our model predicts a Gain when it is ACTUALLY a Gain? Our First month sensitivity is 80% of the time able to predict a Gain when its a Gain, and in our three month - 69%
 
 ## Loss function
 

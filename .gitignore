@@ -34,3 +34,10 @@ ML_Model/notebooks/network.gv
 ML_Model/notebooks/nn.json
 ML_Model/notebooks/.ipynb_checkpoints/IPO_Model-Three_month-annvizualize-checkpoint.ipynb
 ML_Model/notebooks/testing notebooks/.ipynb_checkpoints/de-encode-checkpoint.ipynb
+ML_Model/notebooks/.ipynb_checkpoints/IPO_Model-Firstday-RnD_ratio-checkpoint.ipynb
+ML_Model/notebooks/.ipynb_checkpoints/IPO_Model-Three_month-RnD_ratio-checkpoint.ipynb
+ML_Model/notebooks/testing notebooks/.ipynb_checkpoints/IPO_Model-Firstday-loss-checkpoint.ipynb
+ML_Model/notebooks/testing notebooks/.ipynb_checkpoints/IPO_Model-Firstday-RnD_ratio-checkpoint.ipynb
+ML_Model/notebooks/testing notebooks/.ipynb_checkpoints/IPO_Model-Three_month-RnD_ratio-checkpoint.ipynb
+ML_Model/notebooks/.ipynb_checkpoints/IPO_Model-Firstday-ConfusionMatrix-checkpoint.ipynb
+ML_Model/notebooks/.ipynb_checkpoints/IPO_Model-Three_month-ConfusionMatrix-checkpoint.ipynb

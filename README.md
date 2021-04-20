@@ -66,7 +66,7 @@ UofT Data Analytics - Module 20: Final Project
    README.md
    * Description of the communication protocols - Established
    * Outline of the project - Completed
-   * 12 Commits in total - Completed
+   * 18 Commits in total - Completed
    
   ## Machine Learning Model
 
@@ -87,7 +87,7 @@ UofT Data Analytics - Module 20: Final Project
 
    - Deep Learning
     - Using all our 10 features, our models performed:
-        - **Three Month Return model: Current Accuracy 69%**
+        - **Three Month Return model: Current Accuracy 71%**
         - **First Day Closing Price model: Current Accuracy 65%**
        
 <a href="https://github.com/reinalim/FinalProject_IPO/tree/Develop/ML_Model"> **Click here for learn more about Machine Learning Model Choices** </a>
@@ -138,8 +138,18 @@ Part #2: Machine Learning Visual
 
 ---
 
-## Summary
+## Analysis Results Recap
+* Stock market’s appetite for IPOs is not affected by the recent economic downturn in 2020.
+* First Day Returns are positively correlated with Gross Profit Margin while negatively correlated with Cash Flow from Investment (The higher the investment spent, the stronger the First Day Return).
+* 3 Month Returns are positively correlated with EBITDA.
+* Indeed, Gross Profit Margin, Cash Flow from Investment, and EBITDA turned out to be the most important features in our models, which returned an accuracy of 65% and 71% respectively.
+* Our models were better at predicting Gains than Losses, as Gains had better precision and recall scores than Losses, for both the First Day Return and Three-Month Return.
 
+---
 
+## Recommendation for Future Analysis
 
+#### To obtain data with higher quality:
+* The extent of our analysis is partly limited by the quality and incompleteness of our data as we were only able to obtain sufficient quarterly financial information from Alpha Vantage  for 15%  of the original listing of IPOs.
+* Therefore, there were not enough high quality data to perform meaningful statistical analysis to uncover trends in the relationship between Returns and various financial metrics.
 
