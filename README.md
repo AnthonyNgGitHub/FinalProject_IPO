@@ -128,7 +128,7 @@ Part #2: Machine Learning Visual
 <a href="https://github.com/reinalim/FinalProject_IPO/tree/Develop/Dashboard"> **Dashboard Workflow Details** </a>
 
   **Description of interative element(s)**
-   - Search and Filter Functions available on Tableau Dashboard <a href="https://public.tableau.com/profile/reina6848#!/vizhome/Book1_16172235019440/DashboardFinal1?publish=yes"> **Link to Tableau Dashboard** </a>
+   - Search and Filter Functions available on Tableau Dashboard <a href="https://public.tableau.com/profile/reina6848#!/vizhome/Book1_16172235019440/IPOAnalysisStory?publish=yes"> **Link to Tableau Dashboard** </a>
 
 <br>
 
